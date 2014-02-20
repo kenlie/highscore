@@ -1,0 +1,11 @@
+<view title="'Welcome to bitchCity'">
+  <content has-header="true" has-tabs="true">
+   	<h1>HALLA</h1>
+
+    <list>
+      <item ng-repeat="user in users" type ="item-text-wrap" href="#/tab/highscore/{{users.id}}">
+        <h1>{{user.name}}</h1>
+        <p> {{user.score}} kroner</p>
+    </list>
+  </content>
+</view>

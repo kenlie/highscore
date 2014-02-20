@@ -1,0 +1,16 @@
+<!-- 
+  This template gets placed in the Pet tab's <nav-view> directive.
+  It was wired up in the app config (app.js) 
+  The 'pets' data comes from its $scope within PetIndexCtrl (controller.js)
+-->
+<view title="'Welcome to bitchCity'">
+  <content has-header="true" has-tabs="true">
+   
+
+    <list>
+      <item ng-repeat="user in users" type ="item-text-wrap" href="#/tab/pet/{{users.id}}">
+        <h1>{{user.name}}</h1>
+        <p> {{user.score}} kroner</p>
+    </list>
+  </content>
+</view>
